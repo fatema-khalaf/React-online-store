@@ -30,3 +30,29 @@
         }
     }
 }
+.side-menu{
+    @media only screen and (max-width: $bp-medium) {
+    position: fixed;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    background-color: $color-grey-light-1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s ease-in-out;
+    pointer-events: none; 
+    &__close{
+        transform: translateX(100%);
+        opacity: 0;
+        pointer-events: none; 
+    }
+    &__open{
+        transform: translateX(0);
+        opacity: 1;
+        pointer-events: visible;
+    }
+}
+
+}
