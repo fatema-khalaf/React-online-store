@@ -1,16 +1,22 @@
+@import "base";
+
 %heading {
+    font-family: $font-primary;
+    font-weight: 400;
+}
+%body {
     font-family: $font-display;
     font-weight: 400;
 }
 
-.heading-1 {
+.h1 {
     @extend %heading;
     font-size: 4.5rem;
     color: $color-grey-light-1;
     line-height: 1;
 }
 
-.heading-2 {
+.h2 {
     @extend %heading;
     font-size: 4rem;
     font-style: italic;
@@ -20,17 +26,39 @@
     &--dark { color: $color-grey-dark-1; }
 }
 
-.heading-3 {
+.h3 {
     @extend %heading;
     font-size: 1.6rem;
     color: $color-primary;
     text-transform: uppercase;
 }
 
-.heading-4 {
+.h4 {
     @extend %heading;
     font-size: 1.9rem;
 
+    &--light { color: $color-grey-light-1; }
+    &--dark { color: $color-grey-dark-1; }
+}
+.body-1 {
+    font-family: $font-display;
+    font-size: 1.2rem;
+    color: $color-grey-light-0;
+    &--light { color: $color-grey-light-1; }
+    &--dark { color: $color-grey-dark-1; }
+}
+.body-2 {
+    @extend %body;
+    font-size: 1rem;
+    text-transform: capitalize;
+    color: $color-grey-light-0;
+    &--light { color: $color-grey-light-1; }
+    &--dark { color: $color-grey-dark-1; }
+}
+.icon {
+    font-family: $font-display;
+    font-size: 2rem;
+    color: $color-grey-light-0;
     &--light { color: $color-grey-light-1; }
     &--dark { color: $color-grey-dark-1; }
 }
