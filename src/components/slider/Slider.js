@@ -3,6 +3,8 @@ import image3 from "../../assets/image3.jpg";
 import image4 from "../../assets/image4.jpg";
 import image5 from "../../assets/image5.webp";
 import image6 from "../../assets/image6.jpg";
+import image7 from "../../assets/image7.jpg";
+import image8 from "../../assets/image8.jpg";
 import { createRef, useEffect, useRef, useState } from "react";
 const Slider = () => {
   const items = [
@@ -19,12 +21,12 @@ const Slider = () => {
       caption: "Creative touch second",
     },
     {
-      image: image3,
+      image: image8,
       title: "third",
       captiom: "third",
     },
     {
-      image: image6,
+      image: image7,
       title: "third",
       captiom: "third",
     },
