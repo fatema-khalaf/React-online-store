@@ -7,25 +7,12 @@ import DetailedProductCard from "../DetailedProductCard";
 const BestSellerTabs = () => {
   const [slideIndex, setSlideIndex] = useState(1);
 
-  const nextSlide = () => {
-    if (slideIndex !== dataSlider.length) {
-      setSlideIndex(slideIndex + 1);
-    } else if (slideIndex === dataSlider.length) {
-      setSlideIndex(1);
-    }
-  };
-
-  const prevSlide = () => {
-    if (slideIndex !== 1) {
-      setSlideIndex(slideIndex - 1);
-    } else if (slideIndex === 1) {
-      setSlideIndex(dataSlider.length);
-    }
-  };
-
   const moveDot = (index) => {
     setSlideIndex(index);
+    setAnimate(true); // for rerun the keyfram animation on each view of new slide
   };
+
+  const [animate, setAnimate] = useState(true);
   return (
     <div className={`${styles["tabs-holder"]}`}>
       <h1 className={styles["h2"]}>Best Sellings</h1>
@@ -50,7 +37,7 @@ const BestSellerTabs = () => {
                 slideIndex === index + 1 && styles["tab__active"]
               }`}
             >
-              <DetailedProductCard />
+              <DetailedProductCard animate={animate} setAnimate={setAnimate} />
             </div>
           );
         })}

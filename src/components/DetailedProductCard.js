@@ -9,7 +9,7 @@ import image7 from "../assets/image7.jpg";
 import withAutoplay from "react-awesome-slider/dist/autoplay";
 import AwesomeSliderStyles from "react-awesome-slider/src/styles";
 
-const DetailedProductCard = () => {
+const DetailedProductCard = ({ animate, setAnimate }) => {
   const AutoplaySlider = withAutoplay(AwesomeSlider);
   const data = {
     name: "Product Name",
@@ -37,12 +37,27 @@ const DetailedProductCard = () => {
         </AutoplaySlider>
       </div>
       <div className={styles["card__info"]}>
-        <div className={styles["card__info--inner"]}>
-          <div className={styles["card__info--inner--animate"]}>
+        <div
+          className={`${styles["card__info--inner"]} ${
+            animate && styles["animate--inner"]
+          }`}
+        >
+          <div
+            className={`${styles["card__info--inner--animate"]}  ${
+              animate && styles["animate"]
+            }`}
+          >
             <span className={styles["body-2"]}>{data.brand} </span>
             <h3 className={styles["h3"]}>{data.name}</h3>
             <span className={styles["body-2"]}>Best selling this month</span>
-            <button className={styles["btn"]}>Buy now</button>
+            <button
+              className={`${styles["btn"]}  ${
+                animate && styles["animate--button"]
+              }`}
+              onAnimationEnd={() => setAnimate(false)}
+            >
+              Buy now
+            </button>
           </div>
         </div>
       </div>
