@@ -22,9 +22,9 @@
 .h2 {
     @extend %heading;
     font-size: 4rem;
-    font-style: italic;
     line-height: 1;
-
+    font-weight: 500;
+    color: $color-grey-light-0;
     &--light { color: $color-grey-light-1; }
     &--dark { color: $color-grey-dark-1; }
 }
@@ -41,6 +41,14 @@
     font-size: 1.9rem;
     color: $color-grey-light-0;
     &--light { color: $color-grey-light-1; }
+    &--dark { color: $color-grey-dark-1; }
+}
+.h5 {
+    font-family: $font-primary;
+    font-size: 1.6rem;
+    font-weight: 500;
+    color: $color-grey-mid-light;;
+    &--light { color: $color-grey-light-0; }
     &--dark { color: $color-grey-dark-1; }
 }
 .body-1 {
