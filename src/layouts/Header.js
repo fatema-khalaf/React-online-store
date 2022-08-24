@@ -16,25 +16,10 @@ const Header = () => {
   useEffect(() => {
     window.addEventListener("scroll", handleScroll);
   }, []);
-  //   componentDidMount: function() {
-  //     window.addEventListener('scroll', this.handleScroll);
-  // },
 
-  // componentWillUnmount: function() {
-  //     window.removeEventListener('scroll', this.handleScroll);
-  // },
-  // const handleScroll = (event) => {
-  //   console.log("scrollTop: ", event.currentTarget.scrollTop);
-  //   console.log("offsetHeight: ", event.currentTarget.offsetHeight);
-  // };
   const handleScroll = (event) => {
-    // let scrollTop = event.srcElement.body.scrollY;
-    // // itemTranslate = Math.min(0, scrollTop / 3 - 60);
     const winScroll =
       document.body.scrollTop || document.documentElement.scrollTop;
-    console.log(document.documentElement.clientHeight);
-    console.log(winScroll - 100);
-    console.log(winScroll > document.documentElement.clientHeight - 100);
     if (winScroll > document.documentElement.clientHeight - 100) {
       setBack(true);
     }
@@ -42,8 +27,7 @@ const Header = () => {
       setBack(false);
     }
   };
-  // const onscroll = (e) => {};
-  console.log(back);
+
   return (
     <header className={`${styles["header"]} ${back && styles["header--2"]}`}>
       <div className={styles["logo"]}>
