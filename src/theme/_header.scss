@@ -9,6 +9,12 @@
     top:0;
     left:0;
     padding: 1.5rem 5rem;
+    transition: background-color 1s  ease-out;
+    z-index: 999999999;
+    &--2{
+        background-color:#535e644f;
+        backdrop-filter: blur(80px);
+    }
     @media only screen and (max-width: $bp-medium) {
         // grid-column: 1 / -1;
         // background-color: red;
