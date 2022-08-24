@@ -1,0 +1,20 @@
+@import 'base';
+
+.btn {
+    background-color: $color-secondary;
+    color:$color-grey-mid-light;
+    border: none;
+    border-radius: 0;
+    font-family: $font-display;
+    font-size: 1.3rem;
+    width: 100%;
+    padding: 1.2rem 2rem;
+    cursor: pointer;
+    animation: smoothupSpan .7s ease-out .7s;
+    &:hover {
+        background-color: rgba(#fff, .05);
+    }
+    &:active{
+        background-color: $color-secondary;
+    }
+}
