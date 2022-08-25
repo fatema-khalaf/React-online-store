@@ -16,17 +16,21 @@
     font-size: 9rem;
     color: $color-grey-light-0;
     letter-spacing: 1px;
-    line-height: .8;
+    line-height: 0.8;
 }
 
 .h2 {
     @extend %heading;
     font-size: 4rem;
     line-height: 1;
-    font-weight: 500;
+    font-weight: 300;
     color: $color-grey-light-0;
-    &--light { color: $color-grey-light-1; }
-    &--dark { color: $color-grey-dark-1; }
+    &--light {
+        color: $color-grey-light-1;
+    }
+    &--dark {
+        color: $color-grey-dark-1;
+    }
 }
 
 .h3 {
@@ -42,41 +46,69 @@
     @extend %heading;
     font-size: 1.9rem;
     color: $color-grey-light-0;
-    &--light { color: $color-grey-light-1; }
-    &--dark { color: $color-grey-dark-1; }
+    &--light {
+        color: $color-grey-light-1;
+    }
+    &--dark {
+        color: $color-grey-dark-1;
+    }
 }
 .h5 {
     font-family: $font-primary;
     font-size: 1.6rem;
     font-weight: 500;
-    color: $color-grey-mid-light;;
-    &--light { color: $color-grey-light-0; }
-    &--dark { color: $color-grey-dark-1; }
+    color: $color-grey-mid-light;
+    &--light {
+        color: $color-grey-light-0;
+    }
+    &--dark {
+        color: $color-grey-dark-1;
+    }
 }
 .body-1 {
     font-family: $font-display;
     font-size: 1.2rem;
     color: $color-grey-light-0;
-    &--light { color: $color-grey-light-1; }
-    &--dark { color: $color-grey-dark-1; }
+    &--light {
+        color: $color-grey-light-1;
+    }
+    &--dark {
+        color: $color-grey-dark-1;
+    }
 }
 .body-2 {
     @extend %body;
     font-size: 1rem;
     text-transform: capitalize;
     color: $color-grey-light-0;
-    &--light { color: $color-grey-light-1; }
-    &--dark { color: $color-grey-dark-1; }
+    &--light {
+        color: $color-grey-light-1;
+    }
+    &--dark {
+        color: $color-grey-dark-1;
+    }
 }
 .icon {
     font-family: $font-display;
     font-size: 2rem;
     color: $color-grey-light-0;
-    &--light { color: $color-grey-light-1; }
-    &--dark { color: $color-grey-dark-1; }
+    &--light {
+        color: $color-grey-light-1;
+    }
+    &--dark {
+        color: $color-grey-dark-1;
+    }
 }
 
-.mb-sm { margin-bottom: 2rem; }
-.mb-md { margin-bottom: 3rem; }
-.mb-lg { margin-bottom: 4rem; }
-.mb-hg { margin-bottom: 8rem; }
+.mb-sm {
+    margin-bottom: 2rem;
+}
+.mb-md {
+    margin-bottom: 3rem;
+}
+.mb-lg {
+    margin-bottom: 4rem;
+}
+.mb-hg {
+    margin-bottom: 8rem;
+}
