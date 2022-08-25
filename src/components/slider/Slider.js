@@ -22,13 +22,13 @@ const Slider = () => {
     },
     {
       image: image8,
-      title: "third",
-      captiom: "third",
+      title: "this is thew main heading",
+      captiom: "Creative touch",
     },
     {
       image: image7,
-      title: "third",
-      captiom: "third",
+      title: "this is thew main heading",
+      captiom: "Creative touch",
     },
   ];
 
