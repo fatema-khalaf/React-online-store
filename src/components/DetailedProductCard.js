@@ -20,8 +20,8 @@ const DetailedProductCard = ({ animate, setAnimate }) => {
   };
 
   return (
-    <div className={styles["card"]}>
-      <div className={styles["card__slider"]}>
+    <div className={styles["d-card"]}>
+      <div className={styles["d-card__slider"]}>
         <AutoplaySlider
           play={true}
           cancelOnInteraction={true} // should stop playing on user interaction
@@ -36,14 +36,14 @@ const DetailedProductCard = ({ animate, setAnimate }) => {
           ))}
         </AutoplaySlider>
       </div>
-      <div className={styles["card__info"]}>
+      <div className={styles["d-card__info"]}>
         <div
-          className={`${styles["card__info--inner"]} ${
+          className={`${styles["d-card__info--inner"]} ${
             animate && styles["animate--inner"]
           }`}
         >
           <div
-            className={`${styles["card__info--inner--animate"]}  ${
+            className={`${styles["d-card__info--inner--animate"]}  ${
               animate && styles["animate"]
             }`}
           >
@@ -61,7 +61,7 @@ const DetailedProductCard = ({ animate, setAnimate }) => {
           </div>
         </div>
       </div>
-      <div className={styles["card__image"]}>
+      <div className={styles["d-card__image"]}>
         <img src={image3} />
       </div>
     </div>

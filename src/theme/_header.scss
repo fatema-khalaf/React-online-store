@@ -6,21 +6,24 @@
     flex-direction: row;
     align-items: center;
     position: fixed;
-    top:0;
-    left:0;
-    padding: 1.5rem 5rem;
-    transition: background-color 1s  ease-out;
+    top: 0;
+    left: 0;
+    padding: 0 5rem;
+    transition: background-color 1s ease-out;
     z-index: 999999999;
-    &--2{
-        background-color:#535e644f;
+    @media only screen and (max-width: $bp-small) {
+        padding: 0 2rem;
+    }
+    &--2 {
+        background-color: #535e644f;
         backdrop-filter: blur(80px);
     }
 }
-.logo{
-    &__img{
+.logo {
+    &__img {
         width: 12.5rem;
     }
-    &:hover{
+    &:hover {
         cursor: pointer;
     }
 }
